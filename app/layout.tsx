@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "스트라우만 공식 파트너 치과 찾기",
@@ -10,13 +9,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <body>
-        {children}
-        <Script
-          src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=a6b2a62a3c249934be77b4e192f17c19&libraries=services,clusterer&autoload=false"
-          strategy="beforeInteractive"
-        />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
