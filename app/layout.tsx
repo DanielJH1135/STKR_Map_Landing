@@ -11,8 +11,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <head>
-        {/* 브라우저가 네이버에 보내는 주소 형식을 안정화시키는 태그입니다 */}
-        <meta name="referrer" content="no-referrer-when-downgrade" />
+        {/* 네이버가 주소를 100% 인식하도록 만드는 보안 완화 태그입니다. */}
+        <meta name="referrer" content="unsafe-url" />
       </head>
       <body>
         {children}
