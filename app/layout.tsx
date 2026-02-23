@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ko">
       <body>
         {children}
-        {/* 네이버 지도 API - Client ID를 여기에 넣으세요 */}
+        {d5xf9ixwcd}
         <Script
           src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=여기에_복사한_ID_입력"
           strategy="beforeInteractive"
