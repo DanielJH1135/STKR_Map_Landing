@@ -12,9 +12,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ko">
       <body>
         {children}
-        {d5xf9ixwcd}
+        {/* 네이버 지도 API: 제공해주신 ID(d5xf9ixwcd)를 정확히 적용했습니다. */}
         <Script
-          src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=여기에_복사한_ID_입력"
+          src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=d5xf9ixwcd&submodules=geocoder"
           strategy="beforeInteractive"
         />
       </body>
