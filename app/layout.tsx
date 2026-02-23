@@ -11,14 +11,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <head>
-        {/* 네이버 인증 성공을 위한 핵심 보안 태그입니다 */}
+        {/* 브라우저가 네이버에 보내는 주소 형식을 안정화시키는 태그입니다 */}
         <meta name="referrer" content="no-referrer-when-downgrade" />
+      </head>
+      <body>
+        {children}
         <Script
           src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=d5xf9ixwcd"
           strategy="beforeInteractive"
         />
-      </head>
-      <body>{children}</body>
+      </body>
     </html>
   );
 }
